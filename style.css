@@ -1,0 +1,196 @@
+/* style.css */
+
+:root {
+    --bg-color: #F5F3EE;
+    --main-color : #D4AB93;
+    --sub-color1 : #A0D3F8;
+    --cub-color2 : #F8A0A5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hahmlet', serif;
+    width: 100%;
+}
+
+/* HOME */
+
+#home {
+    width: 100%;
+    height: 100%;
+}
+
+#home > img {
+    width: 100%;
+    height: 70vh;
+}
+
+#home > .main-text {
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+}
+
+.main-text > .main-title {
+    margin: 2.4vh auto;
+    letter-spacing: 0.35em;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.bar1 {
+    height: 3px;
+    width: 10%;
+    background: var(--main-color);
+    margin: 0 auto;
+    margin-bottom: 2.4vh;
+}
+
+.main-text > .date {
+    margin-bottom: 1.7vh;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+/* invitation */
+#invitation {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.title > img {
+    margin-top: 9.8vh;
+    margin-bottom: 1.2vh;
+}
+
+.title > p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--main-color);
+    letter-spacing: 0.3em;
+}
+
+#invitation > .invitation-text {    
+    margin-top: 11vh;
+    line-height: 2.4em;
+    margin-bottom: 8.6vh;
+    text-align: center;
+}
+
+#invitation > .bar1 {
+    margin-bottom: 8.6vh;
+}
+
+#invitation > .invitation-footer > p{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 400;
+}
+
+#invitation > .invitation-footer > p > span{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#invitation > .invitation-footer {
+    margin-bottom: 14.7vh;
+}
+
+/* call */
+
+#call {
+    width: 100%;
+    height: 100%;
+}
+
+#call > .calling {
+    width: 100%;
+    height: 7.3vh;
+    margin-top: 4.9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#call > .calling > p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-right: 36px;
+}
+
+#call > .calling > .call-icon {
+    width: 112px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#call > .parents-call {
+    width: 100%;
+    height: 51.1vh;
+}
+
+#call > .parents-call > .parents-call-box {    
+    width: 100%;
+    height: 7.3vh;    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: var(--bg-color);    
+    margin-top: 4.9vh;
+    margin-bottom: 6.1vh;
+}
+
+#call > .parents-call > .parents-call-box > h1 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.mw-parents {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.mw-parents > .box {
+    width: 42.2%;
+    height: 29vh;
+    background: var(--bg-color);
+    text-align: center;
+}
+
+.box > h1 {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #041961;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+}
+.box > .parents {
+    margin-bottom: 1.2vh;
+}
+
+.box > .parents > p {
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-bottom: 1.2vh;
+}
+
+.box > .parents > p > span{
+    font-size: 1.2em;
+}
+
+.box > .parents > .call-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* PHOTO GALLERY */

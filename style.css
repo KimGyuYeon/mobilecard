@@ -4,7 +4,8 @@
     --bg-color: #F5F3EE;
     --main-color : #D4AB93;
     --sub-color1 : #A0D3F8;
-    --cub-color2 : #F8A0A5;
+    --sub-color2 : #F8A0A5;
+    --sub-color3 : #f0ebe3e0;
 }
 
 *{
@@ -16,13 +17,24 @@
 body {
     font-family: 'Hahmlet', serif;
     width: 100%;
+    /* 컴퓨터에서도 모바일 화면처럼 보이게 최댓값지정 */
+    max-width: 416px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* HOME */
 
 #home {
     width: 100%;
-    height: 100%;
+    background: var(--bg-color);
 }
 
 #home > img {
@@ -32,8 +44,8 @@ body {
 
 #home > .main-text {
     width: 100%;
-    height: 30vh;
     text-align: center;
+    padding: 5vh;
 }
 
 .main-text > .main-title {
@@ -60,7 +72,7 @@ body {
 /* invitation */
 #invitation {
     width: 100%;
-    height: 100%;
+    background: var(--sub-color3);
 }
 
 .title {
@@ -102,7 +114,7 @@ body {
 }
 
 #invitation > .invitation-footer {
-    margin-bottom: 14.7vh;
+    padding-bottom: 4.7vh;
 }
 
 /* call */
@@ -194,3 +206,203 @@ body {
 }
 
 /* PHOTO GALLERY */
+#photogallery {
+    width: 100%;    
+    background: var(--sub-color3);
+    padding-bottom: 1vh;
+}
+
+#photogallery > figure {
+    width: 100%;
+    height: 63.05vh;
+    background: var(--bg-color);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.main-photo > img {
+    width: 100%;
+    height: 49vh;
+    object-fit: cover;
+    display: block;
+}
+
+figure > .img-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+figure > .img-list > li {
+    width: calc((100% - 30px / 4));
+    height: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 10px;
+}
+
+figure > .img-list > li:first-child {
+    padding-left: 10px;
+}
+
+figure > .img-list > li > a > img{
+    width: 100%;
+    height: 92px;
+    object-fit: cover;
+}
+
+#photogallery > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#photogallery > .bar1 {
+    margin-bottom: 40px;
+}
+
+/* location 오시는 길 */
+
+#location > .title {
+    margin-bottom: 30px;
+}
+
+#map {
+    width: 100%;
+    height: 33vh;
+    margin-bottom: 30px;
+}
+
+#map > iframe {
+    width: 100%;
+    height: 33vh;
+}
+
+.text-group {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#location > .text-group > .box1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#location > .text-group > .box1 > .text > h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#location > .text-group > .box1 > .text > p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bar2 {
+    background-color: var(--main-color);
+    width: 95%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+#location > .text-group > .box2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#location > .text-group > .box2 > h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#location > .text-group > .box2 > p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* 마음 전하기 */
+#account-number > .title {
+    margin-bottom: 30px;
+}
+
+#account-number > p {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+#account-number > .mw-box {
+    margin: 50px 30px;
+}
+
+#account-number > .mw-box > p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.m-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.mw-box > .m-box > .box1 {
+    width: 225px;
+    height: 58px;
+    border-radius: 30px;
+    background: var(--sub-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mw-box > .m-box > .box1 {
+    color: #fff;
+}
+
+.w-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.mw-box > .w-box > .box1 {
+    width: 225px;
+    height: 58px;
+    border-radius: 30px;
+    background: var(--sub-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mw-box > .w-box > .box1 {
+    color: #fff;
+}
+
+#account-number > .closing > p {
+    font-weight: 100;
+    font-style: 23px;
+    text-align: center;
+}
+
+.closing > p > span {
+    font-size: 15px;
+    color: var(--main-color);
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+.closing {
+    margin-bottom: 50px;
+}
+
+.snsbox {
+    background-color: var(--bg-color);
+    padding: 58px 42px;
+    display: flex;
+    justify-content: space-between;
+}

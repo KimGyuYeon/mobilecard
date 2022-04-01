@@ -21,7 +21,6 @@ html, body {width: 100%; height: 100%;}
 
 body {
     font-family: 'Hahmlet', serif;
-    width: 100%;
     /* 컴퓨터에서도 모바일 화면처럼 보이게 최댓값지정 */
     max-width: 416px;
     margin: 0 auto;
@@ -38,19 +37,19 @@ a {
 /* HOME */
 
 #home {
-    width: 100%;
     background: var(--bg-color);
 }
 
 #home > img {
     width: 100%;
-    height: 70vh;
+    height: 66vh;
 }
 
 #home > .main-text {
     width: 100%;
+    height: 34vh;
     text-align: center;
-    padding: 5vh;
+    padding: 2vh;
 }
 
 .main-text > .main-title {
@@ -77,6 +76,7 @@ a {
 /* invitation */
 #invitation {
     width: 100%;
+    height: 100%;
     background: var(--sub-color3);
 }
 
@@ -85,7 +85,7 @@ a {
 }
 
 .title > img {
-    margin-top: 9.8vh;
+    margin-top: 8vh;
     margin-bottom: 1.2vh;
 }
 
@@ -97,14 +97,14 @@ a {
 }
 
 #invitation > .invitation-text {    
-    margin-top: 11vh;
+    margin-top: 8vh;
     line-height: 2.4em;
-    margin-bottom: 8.6vh;
+    margin-bottom: 5vh;
     text-align: center;
 }
 
 #invitation > .bar1 {
-    margin-bottom: 8.6vh;
+    margin-bottom: 5vh;
 }
 
 #invitation > .invitation-footer > p{
@@ -130,40 +130,42 @@ a {
 }
 
 #call > .calling {
-    width: 100%;
+    width: 300px;
     height: 7.3vh;
-    margin-top: 4.9vh;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 #call > .calling > p {
-    font-size: 1.2em;
+    font-size: 16px;
     font-weight: 400;
     margin-right: 36px;
 }
 
 #call > .calling > .call-icon {
-    width: 112px;
+    width: 140px;
     display: flex;
     justify-content: space-between;
 }
 
 #call > .parents-call {
     width: 100%;
-    height: 51.1vh;
+    height: 50vh;
 }
 
 #call > .parents-call > .parents-call-box {    
     width: 100%;
-    height: 7.3vh;    
+    height: 7vh;    
     align-items: center;
     justify-content: center;
     display: flex;
     background: var(--bg-color);    
-    margin-top: 4.9vh;
-    margin-bottom: 6.1vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 #call > .parents-call > .parents-call-box > h1 {
@@ -177,9 +179,14 @@ a {
     justify-content: space-around;
 }
 
+.call-icon > a > img {
+    width: 7vh;
+    height: 7vh;
+}
+
 .mw-parents > .box {
     width: 42.2%;
-    height: 29vh;
+    height: 33vh;
     background: var(--bg-color);
     text-align: center;
 }
@@ -213,6 +220,7 @@ a {
 /* PHOTO GALLERY */
 #photogallery {
     width: 100%;    
+    height: 100%;
     background: var(--sub-color3);
     padding-bottom: 1vh;
 }
@@ -265,6 +273,10 @@ figure > .img-list > li > a > img{
 }
 
 /* location 오시는 길 */
+#location {
+    width: 100%;
+    height: 100%;
+}
 
 #location > .title {
     margin-bottom: 30px;
@@ -326,6 +338,12 @@ figure > .img-list > li > a > img{
 }
 
 /* 마음 전하기 */
+
+#account-number {
+    width: 100%;
+    height: 100%;
+}
+
 #account-number > .title {
     margin-bottom: 30px;
 }
@@ -402,12 +420,14 @@ figure > .img-list > li > a > img{
 }
 
 .closing {
-    margin-bottom: 50px;
+    margin-bottom: 8vh;
 }
 
 .snsbox {
+    width: 100%;
+    height: 30vh;
     background-color: var(--bg-color);
-    padding: 58px 42px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }

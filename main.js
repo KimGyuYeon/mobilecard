@@ -30,3 +30,11 @@ $(window).on("wheel", function(e){
 	$html.animate({scrollTop : posTop});
  
 });
+
+
+$(function(){
+	$('.img-list > li > a').on('click', function(){
+		var src = $(this).children().attr('src');
+		$('.main-photo > img').attr('src', src);
+	})
+});
